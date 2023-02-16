@@ -35,8 +35,8 @@
                     <input type="text" placeholder="no - street - city" required>
                 </div>
                 <div class="inputBox">
-                    <span>Phone Number :</span>
-                    <input type="text" placeholder="077 2038566" required>
+                    <span>Price :</span>
+                    <input type="text" placeholder="" id="price" required>
                 </div>
              
             </div>
@@ -72,4 +72,9 @@
 </div>    
     
 </body>
+<script>
+    console.log(localStorage.getItem("totalCost"));
+    document.getElementById("price").value = localStorage.getItem("totalCost");
+</script>
+<script src="main.js"></script>
 </html>

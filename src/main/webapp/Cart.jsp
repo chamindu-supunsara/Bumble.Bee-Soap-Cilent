@@ -37,6 +37,11 @@
             <div class="products">
                 
             </div>
+            <div class="buyNowButton">
+                <form action="Order.jsp">
+                    <input type="submit" value="Click" onclick="passvalues();"/>
+                </form>
+            </div>
         </div>
         
         <footer class="footer">
