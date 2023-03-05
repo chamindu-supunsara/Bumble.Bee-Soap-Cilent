@@ -1,6 +1,5 @@
-com\mycompany\client\Hello.class
 com\mycompany\client\StudentService_Service.class
-com\mycompany\client\ObjectFactory.class
-com\mycompany\client\package-info.class
+com\mycompany\client\RegisterCustomer.class
+com\mycompany\client\Customers.class
 com\mycompany\client\StudentService.class
-com\mycompany\client\HelloResponse.class
+com\mycompany\client\RegisterCustomerResponse.class
