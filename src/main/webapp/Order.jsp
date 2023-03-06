@@ -16,7 +16,7 @@
 <body>
 
 <div class="container">
-    <form action="#">
+    <form action="Customer_Order_Servelt" method="post">
         <div class="row">
             <div class="col">
 
@@ -24,19 +24,19 @@
 
                 <div class="inputBox">
                     <span>ID :</span>
-                    <input type="text" placeholder="200017503598" required>
+                    <input type="text" name="id" placeholder="200017503598" required>
                 </div>
                 <div class="inputBox">
                     <span>Full Name :</span>
-                    <input type="email" placeholder="chamindu supunsara" required>
+                    <input type="text" name="name" placeholder="chamindu supunsara" required>
                 </div>
                 <div class="inputBox">
                     <span>address :</span>
-                    <input type="text" placeholder="no - street - city" required>
+                    <input type="text" name="address" placeholder="no - street - city" required>
                 </div>
                 <div class="inputBox">
                     <span>Price :</span>
-                    <input type="text" placeholder="" id="price" required>
+                    <input type="text" name="price" placeholder="" id="price" required>
                 </div>
              
             </div>
@@ -51,22 +51,22 @@
                 </div>
                 <div class="inputBox">
                     <span>Loan Balance :</span>
-                    <input type="text" placeholder="Up to 15 000">
+                    <input type="text" name="loan" placeholder="Up to 15 000">
                 </div>
                 <div class="inputBox">
                     <span>Birthday :</span>
-                    <input type="text" placeholder="2000/06/23">
+                    <input type="text" name="birthday" placeholder="2000/06/23">
                 </div>
                 <div class="inputBox">
                     <span>Installment Plan :</span>
-                    <input type="text" placeholder="Up to 3 Months">
+                    <input type="text" name="plan" placeholder="Up to 3 Months">
                 </div>
                
             </div>
     
         </div>
 
-        <input type="submit" value="proceed to checkout" class="submit-btn">
+        <input type="submit" value="proceed to checkout" class="submit-btn" onclick="myFunction()">
 
     </form>
 </div>    
@@ -75,6 +75,9 @@
 <script>
     console.log(localStorage.getItem("totalCost"));
     document.getElementById("price").value = localStorage.getItem("totalCost");
+    function myFunction() {
+        alert("Order Successfuly !!!");
+    }
 </script>
 <script src="main.js"></script>
 </html>

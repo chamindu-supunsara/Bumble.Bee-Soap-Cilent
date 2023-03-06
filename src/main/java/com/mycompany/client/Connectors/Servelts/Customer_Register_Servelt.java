@@ -32,7 +32,7 @@ public class Customer_Register_Servelt extends HttpServlet {
         String EMAIL = request.getParameter("email");
         String PASSWORD = request.getParameter("password");
         
-        Customers cus=new Customers();
+        Customers cus = new Customers();
         cus.setCusId(ID);
         cus.setCusName(NAME);
         cus.setCusEmail(EMAIL);
