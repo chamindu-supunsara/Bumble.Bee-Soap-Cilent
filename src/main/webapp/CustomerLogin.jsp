@@ -18,14 +18,14 @@
     <div class="container">
       <div class="wrapper">
         <div class="title"><span>Customer Login</span></div>
-        <form action="#">
+        <form action="Customer_login_Servelet" method="post">
           <div class="row">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="ID" required>
+            <input type="text" placeholder="ID" name="id" required>
           </div>
           <div class="row">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Password" name="password" required>
           </div>
           <br>
           <div class="row button">

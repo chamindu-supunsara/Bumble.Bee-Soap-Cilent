@@ -26,6 +26,24 @@ public interface CustomerService {
 
     /**
      * 
+     * @param password
+     * @param id
+     * @return
+     *     returns com.mycompany.client.Customers
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "loginCustomer", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.client.LoginCustomer")
+    @ResponseWrapper(localName = "loginCustomerResponse", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.client.LoginCustomerResponse")
+    @Action(input = "http://Services.service.mycompany.com/CustomerService/loginCustomerRequest", output = "http://Services.service.mycompany.com/CustomerService/loginCustomerResponse")
+    public Customers loginCustomer(
+        @WebParam(name = "id", targetNamespace = "")
+        String id,
+        @WebParam(name = "password", targetNamespace = "")
+        String password);
+
+    /**
+     * 
      * @param customer
      * @return
      *     returns boolean

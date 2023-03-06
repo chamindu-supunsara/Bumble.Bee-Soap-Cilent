@@ -20,6 +20,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="cus_email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="cus_id" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="cus_name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="isValide" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *         &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -34,6 +35,7 @@ import javax.xml.bind.annotation.XmlType;
     "cusEmail",
     "cusId",
     "cusName",
+    "isValide",
     "password"
 })
 public class Customers {
@@ -44,6 +46,7 @@ public class Customers {
     protected String cusId;
     @XmlElement(name = "cus_name")
     protected String cusName;
+    protected boolean isValide;
     protected String password;
 
     /**
@@ -116,6 +119,22 @@ public class Customers {
      */
     public void setCusName(String value) {
         this.cusName = value;
+    }
+
+    /**
+     * Gets the value of the isValide property.
+     * 
+     */
+    public boolean isIsValide() {
+        return isValide;
+    }
+
+    /**
+     * Sets the value of the isValide property.
+     * 
+     */
+    public void setIsValide(boolean value) {
+        this.isValide = value;
     }
 
     /**

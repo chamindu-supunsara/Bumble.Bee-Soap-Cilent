@@ -20,4 +20,10 @@ public class CustomerConnector {
         return proxy.registerCustomer(customer);
     
     }
+     
+      public Customers loginCustomer(String id, String password) {
+	 CustomerService_Service service=new CustomerService_Service ();
+         CustomerService proxy=service.getCustomerServicePort();
+        return proxy.loginCustomer(id, password);
+    }
 }   

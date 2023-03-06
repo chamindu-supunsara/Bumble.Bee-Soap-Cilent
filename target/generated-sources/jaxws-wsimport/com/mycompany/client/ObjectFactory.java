@@ -24,7 +24,9 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _LoginCustomer_QNAME = new QName("http://Services.service.mycompany.com/", "loginCustomer");
     private final static QName _RegisterCustomerResponse_QNAME = new QName("http://Services.service.mycompany.com/", "registerCustomerResponse");
+    private final static QName _LoginCustomerResponse_QNAME = new QName("http://Services.service.mycompany.com/", "loginCustomerResponse");
     private final static QName _RegisterCustomer_QNAME = new QName("http://Services.service.mycompany.com/", "registerCustomer");
 
     /**
@@ -35,11 +37,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link LoginCustomer }
+     * 
+     */
+    public LoginCustomer createLoginCustomer() {
+        return new LoginCustomer();
+    }
+
+    /**
      * Create an instance of {@link RegisterCustomerResponse }
      * 
      */
     public RegisterCustomerResponse createRegisterCustomerResponse() {
         return new RegisterCustomerResponse();
+    }
+
+    /**
+     * Create an instance of {@link LoginCustomerResponse }
+     * 
+     */
+    public LoginCustomerResponse createLoginCustomerResponse() {
+        return new LoginCustomerResponse();
     }
 
     /**
@@ -59,12 +77,30 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link LoginCustomer }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "loginCustomer")
+    public JAXBElement<LoginCustomer> createLoginCustomer(LoginCustomer value) {
+        return new JAXBElement<LoginCustomer>(_LoginCustomer_QNAME, LoginCustomer.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link RegisterCustomerResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "registerCustomerResponse")
     public JAXBElement<RegisterCustomerResponse> createRegisterCustomerResponse(RegisterCustomerResponse value) {
         return new JAXBElement<RegisterCustomerResponse>(_RegisterCustomerResponse_QNAME, RegisterCustomerResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link LoginCustomerResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "loginCustomerResponse")
+    public JAXBElement<LoginCustomerResponse> createLoginCustomerResponse(LoginCustomerResponse value) {
+        return new JAXBElement<LoginCustomerResponse>(_LoginCustomerResponse_QNAME, LoginCustomerResponse.class, null, value);
     }
 
     /**
