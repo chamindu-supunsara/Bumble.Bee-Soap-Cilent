@@ -17,14 +17,14 @@
     <div class="container">
       <div class="wrapper">
         <div class="title"><span>Admin Login</span></div>
-        <form action="#">
+        <form action="Admin_login_Servelet" method="post">
           <div class="row">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="Username" required>
+            <input type="text" placeholder="Username" name="id" required>
           </div>
           <div class="row">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Password" name="password" required>
           </div>
           <br>
           <div class="row button">

@@ -147,6 +147,24 @@
                         <id>wsimport-generate-OrderService</id>
                         <phase>generate-sources</phase>
                     </execution>
+                    <execution>
+                        <goals>
+                            <goal>wsimport</goal>
+                        </goals>
+                        <configuration>
+                            <wsdlFiles>
+                                <wsdlFile>localhost_8080/service/AdminsService.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            <packageName></packageName>
+                            <vmArgs>
+                                <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+                            </vmArgs>
+                            <wsdlLocation>http://localhost:8080/service/AdminsService?wsdl</wsdlLocation>
+                            <staleFile>${project.build.directory}/jaxws/stale/AdminsService.stale</staleFile>
+                        </configuration>
+                        <id>wsimport-generate-AdminsService</id>
+                        <phase>generate-sources</phase>
+                    </execution>
                 </executions>
                 <dependencies>
                     <dependency>

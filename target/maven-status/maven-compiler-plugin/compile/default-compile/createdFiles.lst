@@ -1,6 +1,9 @@
 com\mycompany\client\LoginCustomerResponse.class
 com\mycompany\client\CustomerService.class
+com\mycompany\service\services\AdminsService.class
+com\mycompany\service\services\LoginAdminResponse.class
 com\mycompany\service\services\Orders.class
+com\mycompany\service\services\LoginCustomer.class
 com\mycompany\client\package-info.class
 com\mycompany\service\services\package-info.class
 com\mycompany\client\LoginCustomer.class
@@ -9,11 +12,16 @@ com\mycompany\client\RegisterCustomer.class
 com\mycompany\client\StudentService.class
 com\mycompany\client\Connectors\OrderConnector.class
 com\mycompany\service\services\CustomerOrderResponse.class
+com\mycompany\client\Connectors\Servelts\Customer_login_Servelet.class
+com\mycompany\client\Connectors\Servelts\Admin_login_Servelet.class
+com\mycompany\service\services\LoginAdmin.class
 com\mycompany\client\HelloResponse.class
 com\mycompany\client\CustomerService_Service.class
 com\mycompany\client\Connectors\Servelts\Customer_Register_Servelt.class
 com\mycompany\client\Hello.class
+com\mycompany\service\services\Admin.class
 com\mycompany\client\Connectors\Servelts\Customer_Order_Servelt.class
+com\mycompany\service\services\LoginCustomerResponse.class
 com\mycompany\service\services\OrderService.class
 com\mycompany\service\services\OrderService_Service.class
 com\mycompany\client\StudentService_Service.class

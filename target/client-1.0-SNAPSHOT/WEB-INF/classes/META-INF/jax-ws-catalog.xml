@@ -6,4 +6,8 @@
     <system systemId="http://localhost:8080/service/OrderService?xsd=1" uri="wsdl/localhost_8080/service/OrderService.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/service/CustomerService?wsdl" uri="wsdl/localhost_8080/service/CustomerService.wsdl"/>
     <system systemId="http://localhost:8080/service/CustomerService?xsd=1" uri="wsdl/localhost_8080/service/CustomerService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/service/AdminService?wsdl" uri="wsdl/localhost_8080/service/AdminService.wsdl"/>
+    <system systemId="http://localhost:8080/service/AdminService?xsd=1" uri="wsdl/localhost_8080/service/AdminService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/service/AdminsService?wsdl" uri="wsdl/localhost_8080/service/AdminsService.wsdl"/>
+    <system systemId="http://localhost:8080/service/AdminsService?xsd=1" uri="wsdl/localhost_8080/service/AdminsService.xsd_1.xsd"/>
 </catalog>
