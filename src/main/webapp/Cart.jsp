@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="Stylesheet" href="ShopST.css">
+        <link rel="Stylesheet" href="ShopSTY.css">
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
         <title>Shop</title>
@@ -39,7 +39,7 @@
             </div>
             <div class="buyNowButton">
                 <form action="Order.jsp">
-                    <input type="submit" value="Click" onclick="passvalues();"/>
+                    <input type="submit" id="btn1" value="Buy Now" onclick="passvalues();"/>
                 </form>
             </div>
         </div>
