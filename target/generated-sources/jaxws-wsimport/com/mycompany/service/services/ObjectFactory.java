@@ -24,8 +24,8 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _LoginAdmin_QNAME = new QName("http://Services.service.mycompany.com/", "loginAdmin");
-    private final static QName _LoginAdminResponse_QNAME = new QName("http://Services.service.mycompany.com/", "loginAdminResponse");
+    private final static QName _CustomerOrder_QNAME = new QName("http://Services.service.mycompany.com/", "customerOrder");
+    private final static QName _CustomerOrderResponse_QNAME = new QName("http://Services.service.mycompany.com/", "customerOrderResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.mycompany.service.services
@@ -35,45 +35,45 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LoginAdmin }
+     * Create an instance of {@link CustomerOrder }
      * 
      */
-    public LoginAdmin createLoginAdmin() {
-        return new LoginAdmin();
+    public CustomerOrder createCustomerOrder() {
+        return new CustomerOrder();
     }
 
     /**
-     * Create an instance of {@link LoginAdminResponse }
+     * Create an instance of {@link CustomerOrderResponse }
      * 
      */
-    public LoginAdminResponse createLoginAdminResponse() {
-        return new LoginAdminResponse();
+    public CustomerOrderResponse createCustomerOrderResponse() {
+        return new CustomerOrderResponse();
     }
 
     /**
-     * Create an instance of {@link Admin }
+     * Create an instance of {@link Orders }
      * 
      */
-    public Admin createAdmin() {
-        return new Admin();
+    public Orders createOrders() {
+        return new Orders();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LoginAdmin }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerOrder }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "loginAdmin")
-    public JAXBElement<LoginAdmin> createLoginAdmin(LoginAdmin value) {
-        return new JAXBElement<LoginAdmin>(_LoginAdmin_QNAME, LoginAdmin.class, null, value);
+    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "customerOrder")
+    public JAXBElement<CustomerOrder> createCustomerOrder(CustomerOrder value) {
+        return new JAXBElement<CustomerOrder>(_CustomerOrder_QNAME, CustomerOrder.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link LoginAdminResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerOrderResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "loginAdminResponse")
-    public JAXBElement<LoginAdminResponse> createLoginAdminResponse(LoginAdminResponse value) {
-        return new JAXBElement<LoginAdminResponse>(_LoginAdminResponse_QNAME, LoginAdminResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "customerOrderResponse")
+    public JAXBElement<CustomerOrderResponse> createCustomerOrderResponse(CustomerOrderResponse value) {
+        return new JAXBElement<CustomerOrderResponse>(_CustomerOrderResponse_QNAME, CustomerOrderResponse.class, null, value);
     }
 
 }
