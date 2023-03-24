@@ -9,9 +9,19 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Admin Page</title>
+        <link rel="stylesheet" href="adminStyle.css"> 
     </head>
     <body>
-        <h1>Hello World!</h1>
-    </body>
+    <div class="wrapper">
+    <form>
+      <div class="input-box button">
+        <button type="button" id="btn1"><a href="#">View Customers Details</a></button>
+      </div>
+      <div class="input-box button">
+         <button type="button" id="btn1"><a href="#">Manage Customers Details</a></button>
+      </div>
+    </form>
+  </div> 
+  </body>
 </html>
