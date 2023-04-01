@@ -16,10 +16,10 @@
     <div class="wrapper">
     <form>
       <div class="input-box button">
-        <button type="button" id="btn1"><a href="#">View Customers Details</a></button>
+        <button type="button" id="btn1"><a href="ViewDetails.jsp">View Customers Details</a></button>
       </div>
       <div class="input-box button">
-         <button type="button" id="btn1"><a href="#">Manage Customers Details</a></button>
+         <button type="button" id="btn1"><a href="ManageCustomers.jsp">Manage Customers Details</a></button>
       </div>
     </form>
   </div> 
