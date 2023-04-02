@@ -4,11 +4,11 @@
 <xsd:import namespace="http://Services.service.mycompany.com/" schemaLocation="http://localhost:8080/service/CustomerService?xsd=1"/>
 </xsd:schema>
 </types>
-<message name="loginCustomer">
-<part name="parameters" element="tns:loginCustomer"/>
+<message name="update">
+<part name="parameters" element="tns:update"/>
 </message>
-<message name="loginCustomerResponse">
-<part name="parameters" element="tns:loginCustomerResponse"/>
+<message name="updateResponse">
+<part name="parameters" element="tns:updateResponse"/>
 </message>
 <message name="registerCustomer">
 <part name="parameters" element="tns:registerCustomer"/>
@@ -16,19 +16,29 @@
 <message name="registerCustomerResponse">
 <part name="parameters" element="tns:registerCustomerResponse"/>
 </message>
+<message name="loginCustomer">
+<part name="parameters" element="tns:loginCustomer"/>
+</message>
+<message name="loginCustomerResponse">
+<part name="parameters" element="tns:loginCustomerResponse"/>
+</message>
 <portType name="CustomerService">
-<operation name="loginCustomer">
-<input wsam:Action="http://Services.service.mycompany.com/CustomerService/loginCustomerRequest" message="tns:loginCustomer"/>
-<output wsam:Action="http://Services.service.mycompany.com/CustomerService/loginCustomerResponse" message="tns:loginCustomerResponse"/>
+<operation name="update">
+<input wsam:Action="http://Services.service.mycompany.com/CustomerService/updateRequest" message="tns:update"/>
+<output wsam:Action="http://Services.service.mycompany.com/CustomerService/updateResponse" message="tns:updateResponse"/>
 </operation>
 <operation name="registerCustomer">
 <input wsam:Action="http://Services.service.mycompany.com/CustomerService/registerCustomerRequest" message="tns:registerCustomer"/>
 <output wsam:Action="http://Services.service.mycompany.com/CustomerService/registerCustomerResponse" message="tns:registerCustomerResponse"/>
 </operation>
+<operation name="loginCustomer">
+<input wsam:Action="http://Services.service.mycompany.com/CustomerService/loginCustomerRequest" message="tns:loginCustomer"/>
+<output wsam:Action="http://Services.service.mycompany.com/CustomerService/loginCustomerResponse" message="tns:loginCustomerResponse"/>
+</operation>
 </portType>
 <binding name="CustomerServicePortBinding" type="tns:CustomerService">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
-<operation name="loginCustomer">
+<operation name="update">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -38,6 +48,15 @@
 </output>
 </operation>
 <operation name="registerCustomer">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="loginCustomer">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

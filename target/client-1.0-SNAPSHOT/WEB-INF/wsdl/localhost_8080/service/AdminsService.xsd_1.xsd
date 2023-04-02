@@ -12,10 +12,6 @@
 
 <xs:element name="loginAdminResponse" type="tns:loginAdminResponse"/>
 
-<xs:element name="updateRegister" type="tns:updateRegister"/>
-
-<xs:element name="updateRegisterResponse" type="tns:updateRegisterResponse"/>
-
 <xs:complexType name="loginAdmin">
 <xs:sequence>
 <xs:element name="id" type="xs:string" minOccurs="0"/>
@@ -34,28 +30,6 @@
 <xs:element name="admin_id" type="xs:string" minOccurs="0"/>
 <xs:element name="isValide" type="xs:boolean"/>
 <xs:element name="password" type="xs:string" minOccurs="0"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="updateRegister">
-<xs:sequence>
-<xs:element name="customer" type="tns:customers" minOccurs="0"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="customers">
-<xs:sequence>
-<xs:element name="cus_email" type="xs:string" minOccurs="0"/>
-<xs:element name="cus_id" type="xs:string" minOccurs="0"/>
-<xs:element name="cus_name" type="xs:string" minOccurs="0"/>
-<xs:element name="isValide" type="xs:boolean"/>
-<xs:element name="password" type="xs:string" minOccurs="0"/>
-</xs:sequence>
-</xs:complexType>
-
-<xs:complexType name="updateRegisterResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:boolean"/>
 </xs:sequence>
 </xs:complexType>
 

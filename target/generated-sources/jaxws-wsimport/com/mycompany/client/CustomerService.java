@@ -26,21 +26,18 @@ public interface CustomerService {
 
     /**
      * 
-     * @param password
-     * @param id
+     * @param customers
      * @return
-     *     returns com.mycompany.client.Customers
+     *     returns boolean
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "loginCustomer", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.client.LoginCustomer")
-    @ResponseWrapper(localName = "loginCustomerResponse", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.client.LoginCustomerResponse")
-    @Action(input = "http://Services.service.mycompany.com/CustomerService/loginCustomerRequest", output = "http://Services.service.mycompany.com/CustomerService/loginCustomerResponse")
-    public Customers loginCustomer(
-        @WebParam(name = "id", targetNamespace = "")
-        String id,
-        @WebParam(name = "password", targetNamespace = "")
-        String password);
+    @RequestWrapper(localName = "update", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.client.Update")
+    @ResponseWrapper(localName = "updateResponse", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.client.UpdateResponse")
+    @Action(input = "http://Services.service.mycompany.com/CustomerService/updateRequest", output = "http://Services.service.mycompany.com/CustomerService/updateResponse")
+    public boolean update(
+        @WebParam(name = "customers", targetNamespace = "")
+        Customers customers);
 
     /**
      * 
@@ -56,5 +53,23 @@ public interface CustomerService {
     public boolean registerCustomer(
         @WebParam(name = "customer", targetNamespace = "")
         Customers customer);
+
+    /**
+     * 
+     * @param password
+     * @param id
+     * @return
+     *     returns com.mycompany.client.Customers
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "loginCustomer", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.client.LoginCustomer")
+    @ResponseWrapper(localName = "loginCustomerResponse", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.client.LoginCustomerResponse")
+    @Action(input = "http://Services.service.mycompany.com/CustomerService/loginCustomerRequest", output = "http://Services.service.mycompany.com/CustomerService/loginCustomerResponse")
+    public Customers loginCustomer(
+        @WebParam(name = "id", targetNamespace = "")
+        String id,
+        @WebParam(name = "password", targetNamespace = "")
+        String password);
 
 }

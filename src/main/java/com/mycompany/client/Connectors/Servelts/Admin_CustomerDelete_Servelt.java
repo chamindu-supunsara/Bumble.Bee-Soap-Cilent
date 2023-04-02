@@ -28,7 +28,7 @@ public class Admin_CustomerDelete_Servelt extends HttpServlet {
 
         AdminConnector service= new AdminConnector();
         service.deleteVehicle(ID);
-        response.sendRedirect("ManageCustomers.jsp");
+        response.sendRedirect("admin.jsp");
         
         }
 }

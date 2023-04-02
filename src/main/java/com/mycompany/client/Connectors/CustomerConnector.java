@@ -18,7 +18,12 @@ public class CustomerConnector {
         CustomerService_Service service=new CustomerService_Service ();
         CustomerService proxy=service.getCustomerServicePort();
         return proxy.registerCustomer(customer);
-    
+    }
+     
+     public boolean update (Customers customer){
+        CustomerService_Service service=new CustomerService_Service ();
+        CustomerService proxy=service.getCustomerServicePort();
+        return proxy.update(customer);
     }
      
       public Customers loginCustomer(String id, String password) {

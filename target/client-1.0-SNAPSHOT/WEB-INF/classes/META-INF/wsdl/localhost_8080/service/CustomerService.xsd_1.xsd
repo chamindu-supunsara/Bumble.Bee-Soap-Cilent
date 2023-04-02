@@ -8,6 +8,10 @@
 
 <xs:element name="registerCustomerResponse" type="tns:registerCustomerResponse"/>
 
+<xs:element name="update" type="tns:update"/>
+
+<xs:element name="updateResponse" type="tns:updateResponse"/>
+
 <xs:complexType name="loginCustomer">
 <xs:sequence>
 <xs:element name="id" type="xs:string" minOccurs="0"/>
@@ -23,11 +27,23 @@
 
 <xs:complexType name="customers">
 <xs:sequence>
-<xs:element name="cus_email" type="xs:string" minOccurs="0"/>
-<xs:element name="cus_id" type="xs:string" minOccurs="0"/>
-<xs:element name="cus_name" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:string" minOccurs="0"/>
 <xs:element name="isValide" type="xs:boolean"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
 <xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="update">
+<xs:sequence>
+<xs:element name="customers" type="tns:customers" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
 </xs:sequence>
 </xs:complexType>
 

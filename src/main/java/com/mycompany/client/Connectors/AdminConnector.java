@@ -22,11 +22,11 @@ public class AdminConnector {
         return proxy.loginAdmin(id, password);
     }
     
-    public boolean UpdateCustomer(Customers customer){
+    /*public boolean update (Customers customer){
         AdminsService_Service service = new AdminsService_Service ();
-        AdminsService proxy=service.getAdminsServicePort();
-        return proxy.updateRegister(customer);
-    }
+        AdminsService proxy = service.getAdminsServicePort();
+        return proxy.update(customer);
+    }*/
    
      public SalesDetails getSales(String id){
      AdminsService_Service service = new AdminsService_Service ();

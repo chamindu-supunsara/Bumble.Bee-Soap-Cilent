@@ -28,6 +28,21 @@ public interface AdminsService {
      * 
      * @param id
      * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "deleteCustomer", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.DeleteCustomer")
+    @ResponseWrapper(localName = "deleteCustomerResponse", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.DeleteCustomerResponse")
+    @Action(input = "http://Services.service.mycompany.com/AdminsService/deleteCustomerRequest", output = "http://Services.service.mycompany.com/AdminsService/deleteCustomerResponse")
+    public boolean deleteCustomer(
+        @WebParam(name = "id", targetNamespace = "")
+        String id);
+
+    /**
+     * 
+     * @param id
+     * @return
      *     returns com.mycompany.service.services.SalesDetails
      */
     @WebMethod
@@ -56,35 +71,5 @@ public interface AdminsService {
         String id,
         @WebParam(name = "password", targetNamespace = "")
         String password);
-
-    /**
-     * 
-     * @param id
-     * @return
-     *     returns boolean
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "deleteCustomer", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.DeleteCustomer")
-    @ResponseWrapper(localName = "deleteCustomerResponse", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.DeleteCustomerResponse")
-    @Action(input = "http://Services.service.mycompany.com/AdminsService/deleteCustomerRequest", output = "http://Services.service.mycompany.com/AdminsService/deleteCustomerResponse")
-    public boolean deleteCustomer(
-        @WebParam(name = "id", targetNamespace = "")
-        String id);
-
-    /**
-     * 
-     * @param customer
-     * @return
-     *     returns boolean
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "updateRegister", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.UpdateRegister")
-    @ResponseWrapper(localName = "updateRegisterResponse", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.UpdateRegisterResponse")
-    @Action(input = "http://Services.service.mycompany.com/AdminsService/updateRegisterRequest", output = "http://Services.service.mycompany.com/AdminsService/updateRegisterResponse")
-    public boolean updateRegister(
-        @WebParam(name = "customer", targetNamespace = "")
-        Customers customer);
 
 }

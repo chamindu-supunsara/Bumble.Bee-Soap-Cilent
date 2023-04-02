@@ -1,5 +1,5 @@
 
-package com.mycompany.service.services;
+package com.mycompany.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -7,16 +7,16 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for updateRegister complex type.
+ * <p>Java class for update complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="updateRegister">
+ * &lt;complexType name="update">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="customer" type="{http://Services.service.mycompany.com/}customers" minOccurs="0"/>
+ *         &lt;element name="customers" type="{http://Services.service.mycompany.com/}customers" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -26,35 +26,35 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "updateRegister", propOrder = {
-    "customer"
+@XmlType(name = "update", propOrder = {
+    "customers"
 })
-public class UpdateRegister {
+public class Update {
 
-    protected Customers customer;
+    protected Customers customers;
 
     /**
-     * Gets the value of the customer property.
+     * Gets the value of the customers property.
      * 
      * @return
      *     possible object is
      *     {@link Customers }
      *     
      */
-    public Customers getCustomer() {
-        return customer;
+    public Customers getCustomers() {
+        return customers;
     }
 
     /**
-     * Sets the value of the customer property.
+     * Sets the value of the customers property.
      * 
      * @param value
      *     allowed object is
      *     {@link Customers }
      *     
      */
-    public void setCustomer(Customers value) {
-        this.customer = value;
+    public void setCustomers(Customers value) {
+        this.customers = value;
     }
 
 }

@@ -4,6 +4,12 @@
 <xsd:import namespace="http://Services.service.mycompany.com/" schemaLocation="http://localhost:8080/service/AdminsService?xsd=1"/>
 </xsd:schema>
 </types>
+<message name="deleteCustomer">
+<part name="parameters" element="tns:deleteCustomer"/>
+</message>
+<message name="deleteCustomerResponse">
+<part name="parameters" element="tns:deleteCustomerResponse"/>
+</message>
 <message name="getSales">
 <part name="parameters" element="tns:getSales"/>
 </message>
@@ -16,19 +22,11 @@
 <message name="loginAdminResponse">
 <part name="parameters" element="tns:loginAdminResponse"/>
 </message>
-<message name="deleteCustomer">
-<part name="parameters" element="tns:deleteCustomer"/>
-</message>
-<message name="deleteCustomerResponse">
-<part name="parameters" element="tns:deleteCustomerResponse"/>
-</message>
-<message name="updateRegister">
-<part name="parameters" element="tns:updateRegister"/>
-</message>
-<message name="updateRegisterResponse">
-<part name="parameters" element="tns:updateRegisterResponse"/>
-</message>
 <portType name="AdminsService">
+<operation name="deleteCustomer">
+<input wsam:Action="http://Services.service.mycompany.com/AdminsService/deleteCustomerRequest" message="tns:deleteCustomer"/>
+<output wsam:Action="http://Services.service.mycompany.com/AdminsService/deleteCustomerResponse" message="tns:deleteCustomerResponse"/>
+</operation>
 <operation name="getSales">
 <input wsam:Action="http://Services.service.mycompany.com/AdminsService/getSalesRequest" message="tns:getSales"/>
 <output wsam:Action="http://Services.service.mycompany.com/AdminsService/getSalesResponse" message="tns:getSalesResponse"/>
@@ -37,17 +35,18 @@
 <input wsam:Action="http://Services.service.mycompany.com/AdminsService/loginAdminRequest" message="tns:loginAdmin"/>
 <output wsam:Action="http://Services.service.mycompany.com/AdminsService/loginAdminResponse" message="tns:loginAdminResponse"/>
 </operation>
-<operation name="deleteCustomer">
-<input wsam:Action="http://Services.service.mycompany.com/AdminsService/deleteCustomerRequest" message="tns:deleteCustomer"/>
-<output wsam:Action="http://Services.service.mycompany.com/AdminsService/deleteCustomerResponse" message="tns:deleteCustomerResponse"/>
-</operation>
-<operation name="updateRegister">
-<input wsam:Action="http://Services.service.mycompany.com/AdminsService/updateRegisterRequest" message="tns:updateRegister"/>
-<output wsam:Action="http://Services.service.mycompany.com/AdminsService/updateRegisterResponse" message="tns:updateRegisterResponse"/>
-</operation>
 </portType>
 <binding name="AdminsServicePortBinding" type="tns:AdminsService">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<operation name="deleteCustomer">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
 <operation name="getSales">
 <soap:operation soapAction=""/>
 <input>
@@ -58,24 +57,6 @@
 </output>
 </operation>
 <operation name="loginAdmin">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
-<operation name="deleteCustomer">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
-<operation name="updateRegister">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

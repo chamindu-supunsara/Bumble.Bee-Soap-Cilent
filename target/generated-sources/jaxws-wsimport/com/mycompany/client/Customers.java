@@ -3,7 +3,6 @@ package com.mycompany.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -17,10 +16,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="cus_email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="cus_id" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="cus_name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="isValide" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -32,93 +31,66 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "customers", propOrder = {
-    "cusEmail",
-    "cusId",
-    "cusName",
+    "email",
+    "id",
     "isValide",
+    "name",
     "password"
 })
 public class Customers {
 
-    @XmlElement(name = "cus_email")
-    protected String cusEmail;
-    @XmlElement(name = "cus_id")
-    protected String cusId;
-    @XmlElement(name = "cus_name")
-    protected String cusName;
+    protected String email;
+    protected String id;
     protected boolean isValide;
+    protected String name;
     protected String password;
 
     /**
-     * Gets the value of the cusEmail property.
+     * Gets the value of the email property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getCusEmail() {
-        return cusEmail;
+    public String getEmail() {
+        return email;
     }
 
     /**
-     * Sets the value of the cusEmail property.
+     * Sets the value of the email property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setCusEmail(String value) {
-        this.cusEmail = value;
+    public void setEmail(String value) {
+        this.email = value;
     }
 
     /**
-     * Gets the value of the cusId property.
+     * Gets the value of the id property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getCusId() {
-        return cusId;
+    public String getId() {
+        return id;
     }
 
     /**
-     * Sets the value of the cusId property.
+     * Sets the value of the id property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setCusId(String value) {
-        this.cusId = value;
-    }
-
-    /**
-     * Gets the value of the cusName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCusName() {
-        return cusName;
-    }
-
-    /**
-     * Sets the value of the cusName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCusName(String value) {
-        this.cusName = value;
+    public void setId(String value) {
+        this.id = value;
     }
 
     /**
@@ -135,6 +107,30 @@ public class Customers {
      */
     public void setIsValide(boolean value) {
         this.isValide = value;
+    }
+
+    /**
+     * Gets the value of the name property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * Sets the value of the name property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setName(String value) {
+        this.name = value;
     }
 
     /**

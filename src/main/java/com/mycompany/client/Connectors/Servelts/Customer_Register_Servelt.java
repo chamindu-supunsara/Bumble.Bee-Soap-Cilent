@@ -33,9 +33,9 @@ public class Customer_Register_Servelt extends HttpServlet {
         String PASSWORD = request.getParameter("password");
         
         Customers cus = new Customers();
-        cus.setCusId(ID);
-        cus.setCusName(NAME);
-        cus.setCusEmail(EMAIL);
+        cus.setId(ID);
+        cus.setName(NAME);
+        cus.setEmail(EMAIL);
         cus.setPassword(PASSWORD);
         
          try {

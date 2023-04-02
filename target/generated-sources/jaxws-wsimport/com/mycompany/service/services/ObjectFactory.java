@@ -26,9 +26,7 @@ public class ObjectFactory {
 
     private final static QName _LoginAdmin_QNAME = new QName("http://Services.service.mycompany.com/", "loginAdmin");
     private final static QName _LoginAdminResponse_QNAME = new QName("http://Services.service.mycompany.com/", "loginAdminResponse");
-    private final static QName _UpdateRegister_QNAME = new QName("http://Services.service.mycompany.com/", "updateRegister");
     private final static QName _DeleteCustomer_QNAME = new QName("http://Services.service.mycompany.com/", "deleteCustomer");
-    private final static QName _UpdateRegisterResponse_QNAME = new QName("http://Services.service.mycompany.com/", "updateRegisterResponse");
     private final static QName _GetSalesResponse_QNAME = new QName("http://Services.service.mycompany.com/", "getSalesResponse");
     private final static QName _GetSales_QNAME = new QName("http://Services.service.mycompany.com/", "getSales");
     private final static QName _DeleteCustomerResponse_QNAME = new QName("http://Services.service.mycompany.com/", "deleteCustomerResponse");
@@ -46,14 +44,6 @@ public class ObjectFactory {
      */
     public LoginAdmin createLoginAdmin() {
         return new LoginAdmin();
-    }
-
-    /**
-     * Create an instance of {@link UpdateRegister }
-     * 
-     */
-    public UpdateRegister createUpdateRegister() {
-        return new UpdateRegister();
     }
 
     /**
@@ -89,14 +79,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link UpdateRegisterResponse }
-     * 
-     */
-    public UpdateRegisterResponse createUpdateRegisterResponse() {
-        return new UpdateRegisterResponse();
-    }
-
-    /**
      * Create an instance of {@link DeleteCustomerResponse }
      * 
      */
@@ -110,14 +92,6 @@ public class ObjectFactory {
      */
     public Admin createAdmin() {
         return new Admin();
-    }
-
-    /**
-     * Create an instance of {@link Customers }
-     * 
-     */
-    public Customers createCustomers() {
-        return new Customers();
     }
 
     /**
@@ -147,30 +121,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateRegister }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "updateRegister")
-    public JAXBElement<UpdateRegister> createUpdateRegister(UpdateRegister value) {
-        return new JAXBElement<UpdateRegister>(_UpdateRegister_QNAME, UpdateRegister.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link DeleteCustomer }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "deleteCustomer")
     public JAXBElement<DeleteCustomer> createDeleteCustomer(DeleteCustomer value) {
         return new JAXBElement<DeleteCustomer>(_DeleteCustomer_QNAME, DeleteCustomer.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateRegisterResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "updateRegisterResponse")
-    public JAXBElement<UpdateRegisterResponse> createUpdateRegisterResponse(UpdateRegisterResponse value) {
-        return new JAXBElement<UpdateRegisterResponse>(_UpdateRegisterResponse_QNAME, UpdateRegisterResponse.class, null, value);
     }
 
     /**

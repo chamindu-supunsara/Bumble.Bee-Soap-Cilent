@@ -1,5 +1,5 @@
 
-package com.mycompany.service.services;
+package com.mycompany.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -8,12 +8,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for updateRegisterResponse complex type.
+ * <p>Java class for updateResponse complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="updateRegisterResponse">
+ * &lt;complexType name="updateResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -27,10 +27,10 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "updateRegisterResponse", propOrder = {
+@XmlType(name = "updateResponse", propOrder = {
     "_return"
 })
-public class UpdateRegisterResponse {
+public class UpdateResponse {
 
     @XmlElement(name = "return")
     protected boolean _return;

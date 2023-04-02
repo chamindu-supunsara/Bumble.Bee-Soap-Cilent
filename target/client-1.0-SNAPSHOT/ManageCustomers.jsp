@@ -29,7 +29,7 @@
           <input type="password" name="password" placeholder="Enter Your Password" >
       </div>
       <div class="input-box button">
-          <input type="Submit" value="Update Customer" formaction="#" onclick="myFunction1()">
+          <input type="Submit" value="Update Customer" formaction="Admin_Customer_Update_Servelet" onclick="myFunction1()">
       </div>
       <div class="input-box button">
           <input type="Submit" value="Delete Customer" formaction="Admin_CustomerDelete_Servelt" onclick="myFunction2()">
