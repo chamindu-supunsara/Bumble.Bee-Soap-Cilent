@@ -20,19 +20,19 @@
           <input type="text" name="id" placeholder="Enter your ID" required>
       </div>
       <div class="input-box">
-        <input type="text" name="name" placeholder="Enter your Full Name" required>
+        <input type="text" name="name" placeholder="Enter your Full Name" >
       </div>
       <div class="input-box">
-          <input type="email" name="email" placeholder="Enter Your Email" required>
+          <input type="email" name="email" placeholder="Enter Your Email" >
       </div>
       <div class="input-box">
-          <input type="password" name="password" placeholder="Enter Your Password" required>
+          <input type="password" name="password" placeholder="Enter Your Password" >
       </div>
       <div class="input-box button">
           <input type="Submit" value="Update Customer" formaction="#" onclick="myFunction1()">
       </div>
       <div class="input-box button">
-          <input type="Submit" value="Delete Customer" formaction="#" onclick="myFunction2()">
+          <input type="Submit" value="Delete Customer" formaction="Admin_CustomerDelete_Servelt" onclick="myFunction2()">
       </div>
     </form>
   </div>

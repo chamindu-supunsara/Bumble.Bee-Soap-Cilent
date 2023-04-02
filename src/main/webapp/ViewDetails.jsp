@@ -22,19 +22,19 @@
             <br>
             <br>
                  
-            <form class="formbooking" action="SalesServlet" method="post">
+            <form class="formbooking" action="Admin_ViewOrder_Servelt" method="post">
                     <div class="searchHead">
                     <h3>VIEW DETAILS</h3>
                     </div>
                     <div>
-                        <input type="text" placeholder="SEARCH CUSTOMER ORDER DETAILS"  class="srchinput" name="branch" value="${sale.branch}" required> 
+                        <input type="text" placeholder="SEARCH"  class="srchinput" name="id" value="${db.id}" required> 
                     </div>
                     <div class="btn">
                     <button type="submit" class="searchbtn"> Search</button>
                     </div>
                        
     <div class="table-wrapper">
-    <table class="fl-table" action="SalesServlet">
+    <table class="fl-table" action="Admin_ViewOrder_Servelt">
         <thead>
         <tr>
             <th>ID</th>
@@ -49,12 +49,22 @@
         </thead>
         <tbody>
         <tr>
-            <td name="pick">${sale.pick}</td>
-            <td name="branch">${sale.branch}</td>
-        </tr>
+            <td name="id">${db.id}</td>
+            <td name="name">${db.name}</td>
+            <td name="address">${db.address}</td>
+            <td name="price">${db.price}</td>
+            <td name="loan">${db.loan}</td>
+            <td name="birthday">${db.birthday}</td>
+            <td name="plan">${db.plan}</td>
+        </tr>  
         <tr>
-            <td name="pick">${sale.pick}</td>
-            <td name="brnch">${sale.branch}</td>
+            <td name="id">${db.id}</td>
+            <td name="name">${db.name}</td>
+            <td name="address">${db.address}</td>
+            <td name="price">${db.price}</td>
+            <td name="loan">${db.loan}</td>
+            <td name="birthday">${db.birthday}</td>
+            <td name="plan">${db.plan}</td>
            
         </tr> 
     </table>

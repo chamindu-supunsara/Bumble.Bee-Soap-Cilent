@@ -7,6 +7,8 @@ package com.mycompany.client.Connectors;
 import com.mycompany.service.services.Admin;
 import com.mycompany.service.services.AdminsService;
 import com.mycompany.service.services.AdminsService_Service;
+import com.mycompany.service.services.Orders;
+import com.mycompany.service.services.SalesDetails;
 
 /**
  *
@@ -18,5 +20,16 @@ public class AdminConnector {
 	 AdminsService_Service service = new AdminsService_Service ();
          AdminsService proxy=service.getAdminsServicePort();
         return proxy.loginAdmin(id, password);
+    }
+     public SalesDetails getSales(String id){
+     AdminsService_Service service = new AdminsService_Service ();
+     AdminsService proxy=service.getAdminsServicePort();
+     return proxy.getSales(id);
+    }
+     
+     public boolean deleteVehicle(String id){
+        AdminsService_Service service = new AdminsService_Service ();
+        AdminsService proxy=service.getAdminsServicePort();
+        return proxy.deleteCustomer(id);
     }
 }

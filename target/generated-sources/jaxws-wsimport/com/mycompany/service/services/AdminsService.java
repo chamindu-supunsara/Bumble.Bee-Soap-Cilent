@@ -26,6 +26,21 @@ public interface AdminsService {
 
     /**
      * 
+     * @param id
+     * @return
+     *     returns com.mycompany.service.services.SalesDetails
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getSales", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.GetSales")
+    @ResponseWrapper(localName = "getSalesResponse", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.GetSalesResponse")
+    @Action(input = "http://Services.service.mycompany.com/AdminsService/getSalesRequest", output = "http://Services.service.mycompany.com/AdminsService/getSalesResponse")
+    public SalesDetails getSales(
+        @WebParam(name = "id", targetNamespace = "")
+        String id);
+
+    /**
+     * 
      * @param password
      * @param id
      * @return
@@ -41,5 +56,20 @@ public interface AdminsService {
         String id,
         @WebParam(name = "password", targetNamespace = "")
         String password);
+
+    /**
+     * 
+     * @param id
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "deleteCustomer", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.DeleteCustomer")
+    @ResponseWrapper(localName = "deleteCustomerResponse", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.DeleteCustomerResponse")
+    @Action(input = "http://Services.service.mycompany.com/AdminsService/deleteCustomerRequest", output = "http://Services.service.mycompany.com/AdminsService/deleteCustomerResponse")
+    public boolean deleteCustomer(
+        @WebParam(name = "id", targetNamespace = "")
+        String id);
 
 }
