@@ -19,10 +19,12 @@ C:\Users\A V I A N\Documents\NetBeansProjects\client\src\main\java\com\mycompany
 C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\AdminsService_Service.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\SalesDetails.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\CustomerOrderResponse.java
+C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\UpdateRegister.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\client\CustomerService_Service.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\client\ObjectFactory.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\DeleteCustomerResponse.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\src\main\java\com\mycompany\client\Connectors\Servelts\Admin_login_Servelet.java
+C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\UpdateRegisterResponse.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\client\CustomerService.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\LoginAdminResponse.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\package-info.java
@@ -36,5 +38,6 @@ C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\ja
 C:\Users\A V I A N\Documents\NetBeansProjects\client\src\main\java\com\mycompany\client\Connectors\Servelts\Customer_Order_Servelt.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\client\LoginCustomer.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\client\LoginCustomerResponse.java
+C:\Users\A V I A N\Documents\NetBeansProjects\client\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\Customers.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\src\main\java\com\mycompany\client\Connectors\OrderConnector.java
 C:\Users\A V I A N\Documents\NetBeansProjects\client\src\main\java\com\mycompany\client\Connectors\Servelts\Admin_ViewOrder_Servelt.java

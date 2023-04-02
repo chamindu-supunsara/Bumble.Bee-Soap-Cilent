@@ -22,6 +22,12 @@
 <message name="deleteCustomerResponse">
 <part name="parameters" element="tns:deleteCustomerResponse"/>
 </message>
+<message name="updateRegister">
+<part name="parameters" element="tns:updateRegister"/>
+</message>
+<message name="updateRegisterResponse">
+<part name="parameters" element="tns:updateRegisterResponse"/>
+</message>
 <portType name="AdminsService">
 <operation name="getSales">
 <input wsam:Action="http://Services.service.mycompany.com/AdminsService/getSalesRequest" message="tns:getSales"/>
@@ -34,6 +40,10 @@
 <operation name="deleteCustomer">
 <input wsam:Action="http://Services.service.mycompany.com/AdminsService/deleteCustomerRequest" message="tns:deleteCustomer"/>
 <output wsam:Action="http://Services.service.mycompany.com/AdminsService/deleteCustomerResponse" message="tns:deleteCustomerResponse"/>
+</operation>
+<operation name="updateRegister">
+<input wsam:Action="http://Services.service.mycompany.com/AdminsService/updateRegisterRequest" message="tns:updateRegister"/>
+<output wsam:Action="http://Services.service.mycompany.com/AdminsService/updateRegisterResponse" message="tns:updateRegisterResponse"/>
 </operation>
 </portType>
 <binding name="AdminsServicePortBinding" type="tns:AdminsService">
@@ -57,6 +67,15 @@
 </output>
 </operation>
 <operation name="deleteCustomer">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="updateRegister">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

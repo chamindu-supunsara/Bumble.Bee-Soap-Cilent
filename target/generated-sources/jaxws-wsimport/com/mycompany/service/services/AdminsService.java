@@ -72,4 +72,19 @@ public interface AdminsService {
         @WebParam(name = "id", targetNamespace = "")
         String id);
 
+    /**
+     * 
+     * @param customer
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "updateRegister", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.UpdateRegister")
+    @ResponseWrapper(localName = "updateRegisterResponse", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.UpdateRegisterResponse")
+    @Action(input = "http://Services.service.mycompany.com/AdminsService/updateRegisterRequest", output = "http://Services.service.mycompany.com/AdminsService/updateRegisterResponse")
+    public boolean updateRegister(
+        @WebParam(name = "customer", targetNamespace = "")
+        Customers customer);
+
 }

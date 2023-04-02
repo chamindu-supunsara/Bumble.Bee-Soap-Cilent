@@ -16,7 +16,9 @@ com\mycompany\service\services\GetSalesResponse.class
 com\mycompany\service\services\CustomerOrderResponse.class
 com\mycompany\client\Connectors\Servelts\Customer_login_Servelet.class
 com\mycompany\service\services\SalesDetails.class
+com\mycompany\service\services\UpdateRegisterResponse.class
 com\mycompany\client\Connectors\Servelts\Admin_login_Servelet.class
+com\mycompany\client\Connectors\Servelts\Admin_CustomerDelete_Servelt.class
 com\mycompany\service\services\LoginAdmin.class
 com\mycompany\client\HelloResponse.class
 com\mycompany\service\services\GetSales.class
@@ -27,12 +29,14 @@ com\mycompany\service\services\Admin.class
 com\mycompany\client\Connectors\Servelts\Customer_Order_Servelt.class
 com\mycompany\service\services\DeleteCustomerResponse.class
 com\mycompany\service\services\OrderService.class
+com\mycompany\service\services\UpdateRegister.class
 com\mycompany\service\services\OrderService_Service.class
 com\mycompany\client\StudentService_Service.class
 com\mycompany\client\ObjectFactory.class
 com\mycompany\client\Connectors\CustomerConnector.class
 com\mycompany\client\Connectors\Servelts\Admin_ViewOrder_Servelt.class
 com\mycompany\service\services\AdminsService_Service.class
+com\mycompany\service\services\Customers.class
 com\mycompany\service\services\ObjectFactory.class
 com\mycompany\client\Connectors\AdminConnector.class
 com\mycompany\client\Customers.class
