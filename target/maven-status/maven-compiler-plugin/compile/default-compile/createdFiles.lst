@@ -1,0 +1,3 @@
+com\mycompany\client\HelloResponse.class
+com\mycompany\service\services\DeleteOrder.class
+com\mycompany\service\services\DeleteOrderResponse.class
