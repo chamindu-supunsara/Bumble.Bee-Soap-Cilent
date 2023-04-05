@@ -25,7 +25,9 @@ import javax.xml.namespace.QName;
 public class ObjectFactory {
 
     private final static QName _DeleteOrderResponse_QNAME = new QName("http://Services.service.mycompany.com/", "deleteOrderResponse");
+    private final static QName _UpdateOrders_QNAME = new QName("http://Services.service.mycompany.com/", "updateOrders");
     private final static QName _CustomerOrder_QNAME = new QName("http://Services.service.mycompany.com/", "customerOrder");
+    private final static QName _UpdateOrdersResponse_QNAME = new QName("http://Services.service.mycompany.com/", "updateOrdersResponse");
     private final static QName _CustomerOrderResponse_QNAME = new QName("http://Services.service.mycompany.com/", "customerOrderResponse");
     private final static QName _DeleteOrder_QNAME = new QName("http://Services.service.mycompany.com/", "deleteOrder");
 
@@ -45,6 +47,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link UpdateOrders }
+     * 
+     */
+    public UpdateOrders createUpdateOrders() {
+        return new UpdateOrders();
+    }
+
+    /**
      * Create an instance of {@link CustomerOrder }
      * 
      */
@@ -58,6 +68,14 @@ public class ObjectFactory {
      */
     public DeleteOrder createDeleteOrder() {
         return new DeleteOrder();
+    }
+
+    /**
+     * Create an instance of {@link UpdateOrdersResponse }
+     * 
+     */
+    public UpdateOrdersResponse createUpdateOrdersResponse() {
+        return new UpdateOrdersResponse();
     }
 
     /**
@@ -86,12 +104,30 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateOrders }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "updateOrders")
+    public JAXBElement<UpdateOrders> createUpdateOrders(UpdateOrders value) {
+        return new JAXBElement<UpdateOrders>(_UpdateOrders_QNAME, UpdateOrders.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CustomerOrder }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "customerOrder")
     public JAXBElement<CustomerOrder> createCustomerOrder(CustomerOrder value) {
         return new JAXBElement<CustomerOrder>(_CustomerOrder_QNAME, CustomerOrder.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateOrdersResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "updateOrdersResponse")
+    public JAXBElement<UpdateOrdersResponse> createUpdateOrdersResponse(UpdateOrdersResponse value) {
+        return new JAXBElement<UpdateOrdersResponse>(_UpdateOrdersResponse_QNAME, UpdateOrdersResponse.class, null, value);
     }
 
     /**

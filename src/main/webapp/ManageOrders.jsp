@@ -38,7 +38,7 @@
           <input type="text" name="plan" placeholder="Enter Your Plan" >
       </div>
       <div class="input-box button">
-          <input type="Submit" value="Update Order" formaction="#" onclick="myFunction1()">
+          <input type="Submit" value="Update Order" formaction="Admin_Order_Update_Servelet" onclick="myFunction1()">
       </div>
       <div class="input-box button">
           <input type="Submit" value="Delete Order" formaction="Admin_DeleteOrders_Servelt" onclick="myFunction2()">

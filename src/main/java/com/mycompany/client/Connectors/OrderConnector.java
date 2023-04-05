@@ -25,4 +25,10 @@ public class OrderConnector {
      OrderService proxy = service.getOrderServicePort();
      return proxy.deleteOrder(id);
     }
+    
+    public boolean updateOrders (Orders order){
+     OrderService_Service service = new OrderService_Service ();
+     OrderService proxy = service.getOrderServicePort();
+     return proxy.updateOrders(order);
+    }
 }

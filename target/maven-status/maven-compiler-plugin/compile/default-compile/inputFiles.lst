@@ -1,10 +1,11 @@
+C:\Users\A V I A N\Documents\NetBeansProjects\cilent\src\main\java\com\mycompany\client\Connectors\Servelts\Admin_Order_Update_Servelet.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\client\ObjectFactory.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\package-info.java
+C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\UpdateOrdersResponse.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\client\package-info.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\client\CustomerService_Service.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\client\StudentService.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\OrderService_Service.java
-C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\DeleteCustomerResponse.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\LoginAdmin.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\client\Customers.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\AdminsService_Service.java
@@ -19,6 +20,7 @@ C:\Users\A V I A N\Documents\NetBeansProjects\cilent\src\main\java\com\mycompany
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\client\StudentService_Service.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\GetSalesResponse.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\client\UpdateResponse.java
+C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\UpdateOrders.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\Admin.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\Orders.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\src\main\java\com\mycompany\client\Connectors\Servelts\Admin_login_Servelet.java
@@ -27,7 +29,6 @@ C:\Users\A V I A N\Documents\NetBeansProjects\cilent\src\main\java\com\mycompany
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\DeleteOrder.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\src\main\java\com\mycompany\client\Connectors\Servelts\Customer_login_Servelet.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\src\main\java\com\mycompany\client\Connectors\Servelts\Customer_Order_Servelt.java
-C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\DeleteCustomer.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\client\LoginCustomerResponse.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\target\generated-sources\jaxws-wsimport\com\mycompany\service\services\SalesDetails.java
 C:\Users\A V I A N\Documents\NetBeansProjects\cilent\src\main\java\com\mycompany\client\Connectors\OrderConnector.java

@@ -4,6 +4,12 @@
 <xsd:import namespace="http://Services.service.mycompany.com/" schemaLocation="http://localhost:8080/service/OrderService?xsd=1"/>
 </xsd:schema>
 </types>
+<message name="updateOrders">
+<part name="parameters" element="tns:updateOrders"/>
+</message>
+<message name="updateOrdersResponse">
+<part name="parameters" element="tns:updateOrdersResponse"/>
+</message>
 <message name="deleteOrder">
 <part name="parameters" element="tns:deleteOrder"/>
 </message>
@@ -17,6 +23,10 @@
 <part name="parameters" element="tns:customerOrderResponse"/>
 </message>
 <portType name="OrderService">
+<operation name="updateOrders">
+<input wsam:Action="http://Services.service.mycompany.com/OrderService/updateOrdersRequest" message="tns:updateOrders"/>
+<output wsam:Action="http://Services.service.mycompany.com/OrderService/updateOrdersResponse" message="tns:updateOrdersResponse"/>
+</operation>
 <operation name="deleteOrder">
 <input wsam:Action="http://Services.service.mycompany.com/OrderService/deleteOrderRequest" message="tns:deleteOrder"/>
 <output wsam:Action="http://Services.service.mycompany.com/OrderService/deleteOrderResponse" message="tns:deleteOrderResponse"/>
@@ -28,6 +38,15 @@
 </portType>
 <binding name="OrderServicePortBinding" type="tns:OrderService">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+<operation name="updateOrders">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
 <operation name="deleteOrder">
 <soap:operation soapAction=""/>
 <input>

@@ -26,6 +26,21 @@ public interface OrderService {
 
     /**
      * 
+     * @param order
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "updateOrders", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.UpdateOrders")
+    @ResponseWrapper(localName = "updateOrdersResponse", targetNamespace = "http://Services.service.mycompany.com/", className = "com.mycompany.service.services.UpdateOrdersResponse")
+    @Action(input = "http://Services.service.mycompany.com/OrderService/updateOrdersRequest", output = "http://Services.service.mycompany.com/OrderService/updateOrdersResponse")
+    public boolean updateOrders(
+        @WebParam(name = "order", targetNamespace = "")
+        Orders order);
+
+    /**
+     * 
      * @param id
      * @return
      *     returns boolean
