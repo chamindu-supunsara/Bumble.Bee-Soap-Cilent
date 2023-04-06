@@ -20,5 +20,6 @@ Any value defined here will override the pom.xml file value but is only applicab
         <org-netbeans-modules-maven-jaxws._5f_C_5f_OrderService>http://localhost:8080/service/OrderService?wsdl</org-netbeans-modules-maven-jaxws._5f_C_5f_OrderService>
         <org-netbeans-modules-maven-jaxws._5f_C_5f_AdminService>http://localhost:8080/service/AdminService?wsdl</org-netbeans-modules-maven-jaxws._5f_C_5f_AdminService>
         <org-netbeans-modules-maven-jaxws._5f_C_5f_AdminsService>http://localhost:8080/service/AdminsService?wsdl</org-netbeans-modules-maven-jaxws._5f_C_5f_AdminsService>
+        <org-netbeans-modules-maven-jaxws._5f_C_5f_CheckoutService>http://localhost:8080/service/CheckoutService?wsdl</org-netbeans-modules-maven-jaxws._5f_C_5f_CheckoutService>
     </properties>
 </project-shared-configuration>

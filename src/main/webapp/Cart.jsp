@@ -38,8 +38,8 @@
                 
             </div>
             <div class="buyNowButton">
-                <form action="Order.jsp">
-                    <input type="submit" id="btn1" value="Buy Now" onclick="passvalues();"/>
+                <form action="CheckOut.jsp">
+                    <input type="submit" id="btn1" value="NEXT" onclick="passvalues();"/>
                 </form>
             </div>
         </div>

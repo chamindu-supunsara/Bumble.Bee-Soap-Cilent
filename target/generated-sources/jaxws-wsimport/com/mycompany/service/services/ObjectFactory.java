@@ -24,12 +24,8 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _DeleteOrderResponse_QNAME = new QName("http://Services.service.mycompany.com/", "deleteOrderResponse");
-    private final static QName _UpdateOrders_QNAME = new QName("http://Services.service.mycompany.com/", "updateOrders");
-    private final static QName _CustomerOrder_QNAME = new QName("http://Services.service.mycompany.com/", "customerOrder");
-    private final static QName _UpdateOrdersResponse_QNAME = new QName("http://Services.service.mycompany.com/", "updateOrdersResponse");
-    private final static QName _CustomerOrderResponse_QNAME = new QName("http://Services.service.mycompany.com/", "customerOrderResponse");
-    private final static QName _DeleteOrder_QNAME = new QName("http://Services.service.mycompany.com/", "deleteOrder");
+    private final static QName _RegisterCustomerResponse_QNAME = new QName("http://Services.service.mycompany.com/", "registerCustomerResponse");
+    private final static QName _RegisterCustomer_QNAME = new QName("http://Services.service.mycompany.com/", "registerCustomer");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.mycompany.service.services
@@ -39,113 +35,45 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeleteOrderResponse }
+     * Create an instance of {@link RegisterCustomerResponse }
      * 
      */
-    public DeleteOrderResponse createDeleteOrderResponse() {
-        return new DeleteOrderResponse();
+    public RegisterCustomerResponse createRegisterCustomerResponse() {
+        return new RegisterCustomerResponse();
     }
 
     /**
-     * Create an instance of {@link UpdateOrders }
+     * Create an instance of {@link RegisterCustomer }
      * 
      */
-    public UpdateOrders createUpdateOrders() {
-        return new UpdateOrders();
+    public RegisterCustomer createRegisterCustomer() {
+        return new RegisterCustomer();
     }
 
     /**
-     * Create an instance of {@link CustomerOrder }
+     * Create an instance of {@link Checkout }
      * 
      */
-    public CustomerOrder createCustomerOrder() {
-        return new CustomerOrder();
+    public Checkout createCheckout() {
+        return new Checkout();
     }
 
     /**
-     * Create an instance of {@link DeleteOrder }
+     * Create an instance of {@link JAXBElement }{@code <}{@link RegisterCustomerResponse }{@code >}}
      * 
      */
-    public DeleteOrder createDeleteOrder() {
-        return new DeleteOrder();
+    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "registerCustomerResponse")
+    public JAXBElement<RegisterCustomerResponse> createRegisterCustomerResponse(RegisterCustomerResponse value) {
+        return new JAXBElement<RegisterCustomerResponse>(_RegisterCustomerResponse_QNAME, RegisterCustomerResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link UpdateOrdersResponse }
+     * Create an instance of {@link JAXBElement }{@code <}{@link RegisterCustomer }{@code >}}
      * 
      */
-    public UpdateOrdersResponse createUpdateOrdersResponse() {
-        return new UpdateOrdersResponse();
-    }
-
-    /**
-     * Create an instance of {@link CustomerOrderResponse }
-     * 
-     */
-    public CustomerOrderResponse createCustomerOrderResponse() {
-        return new CustomerOrderResponse();
-    }
-
-    /**
-     * Create an instance of {@link Orders }
-     * 
-     */
-    public Orders createOrders() {
-        return new Orders();
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteOrderResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "deleteOrderResponse")
-    public JAXBElement<DeleteOrderResponse> createDeleteOrderResponse(DeleteOrderResponse value) {
-        return new JAXBElement<DeleteOrderResponse>(_DeleteOrderResponse_QNAME, DeleteOrderResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateOrders }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "updateOrders")
-    public JAXBElement<UpdateOrders> createUpdateOrders(UpdateOrders value) {
-        return new JAXBElement<UpdateOrders>(_UpdateOrders_QNAME, UpdateOrders.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerOrder }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "customerOrder")
-    public JAXBElement<CustomerOrder> createCustomerOrder(CustomerOrder value) {
-        return new JAXBElement<CustomerOrder>(_CustomerOrder_QNAME, CustomerOrder.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateOrdersResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "updateOrdersResponse")
-    public JAXBElement<UpdateOrdersResponse> createUpdateOrdersResponse(UpdateOrdersResponse value) {
-        return new JAXBElement<UpdateOrdersResponse>(_UpdateOrdersResponse_QNAME, UpdateOrdersResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CustomerOrderResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "customerOrderResponse")
-    public JAXBElement<CustomerOrderResponse> createCustomerOrderResponse(CustomerOrderResponse value) {
-        return new JAXBElement<CustomerOrderResponse>(_CustomerOrderResponse_QNAME, CustomerOrderResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteOrder }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "deleteOrder")
-    public JAXBElement<DeleteOrder> createDeleteOrder(DeleteOrder value) {
-        return new JAXBElement<DeleteOrder>(_DeleteOrder_QNAME, DeleteOrder.class, null, value);
+    @XmlElementDecl(namespace = "http://Services.service.mycompany.com/", name = "registerCustomer")
+    public JAXBElement<RegisterCustomer> createRegisterCustomer(RegisterCustomer value) {
+        return new JAXBElement<RegisterCustomer>(_RegisterCustomer_QNAME, RegisterCustomer.class, null, value);
     }
 
 }
